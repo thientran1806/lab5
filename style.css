@@ -4,11 +4,12 @@
     background-color: #1a1a1a;
     color: white;
     padding-top: 20px;
-    padding-bottom: 20px;
 }
 #flex-container
 {
     display: flex;
+    flex-direction: column;
+    padding-top: 20px;
 }
 h1
 {
@@ -55,6 +56,7 @@ h2
 }
 h3
 {
+    padding-top: 20px;
     padding-left: 30px;
 }
 #about
@@ -65,10 +67,42 @@ p
 {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 10px;
 }
 img
 {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+}
+@media screen and (max-width: 768px) {
+    #header
+    {
+        margin: auto;
+    }
+    .nav
+    {
+        display: flex;
+        flex-direction: column;
+        font-size: 4vw;
+        padding-top: 1vw;
+        padding-bottom: 0.5vw;
+    }
+    #flex-container
+    {
+        padding-top: 3vw;
+    }
+    #main-content{
+        font-size: 2vw;
+    }
+    #footer{
+        padding-top: 0;
+        font-size: 2vw;
+    }
+    h3{padding-top: 3vw;}
+}
+@media screen and (max-width: 520px) {
+    .nav{
+        font-size: 3vw;
+    }
 }
