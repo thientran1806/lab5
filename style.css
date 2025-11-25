@@ -23,6 +23,15 @@ h1
     padding-left: 60px;
     padding-right: 30px;
 }
+a:link{
+    color: white;
+}
+a:visited{
+    color: aqua;
+}
+a:hover{
+    color: aliceblue;
+}
 #menu
 {
     text-align: center;
