@@ -3,29 +3,35 @@
 {
     background-color: #1a1a1a;
     color: white;
-    padding-top: 20px;
+    padding-top: 1vw;
 
 }
 #flex-container
 {
     display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex: 65%;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
 }
 h1
 {
     text-align: center;
+    font-size: 4vw;
+}
+p{
+    font-size: 2vw;
 }
 .nav
 {
     list-style-type: none;
-    display: inline;
-    font-size: 30px;
-    padding-left: 60px;
-    padding-right: 30px;
+    display: block;
+    font-size: 3vw;
+    padding-left: 3vw;
+    padding-right: 2vw;
 }
 a:link{
     color: white;
@@ -40,10 +46,10 @@ a:hover{
 {
     text-align: center;
     background-color: #034747;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 a
 {
@@ -59,11 +65,15 @@ a
 {
     background-color: #1a1a1a;
     color: white;
-    padding-left: 30px;
+    padding-left: 2vw;
 }
 h2
 {
     text-align: center;
+    font-size: 3vw;
+}
+h3{
+    font-size: 2vw;
 }
 #about
 {
@@ -71,15 +81,16 @@ h2
 }
 img
 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     width: 100%;
 }
-#flex-item2{
-    padding-top: 20px;
-}
 #flex-item3{
-    padding-top: 20px;
+    padding-left: 1.25rem;
+}
+li{
+    display: block;
+    font-size: 2vw;
 }
 @media screen and (max-width: 768px) {
     #header
@@ -109,10 +120,15 @@ img
     }
     #flex-container
     {
+        flex-direction: column;
         padding-top: 2vw;
         padding-bottom: 2vw;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
+    }
+    #main-content
+    {
+        flex: 100%;
     }
     h2
     {
@@ -135,6 +151,7 @@ img
     }
     #flex-item3{
         padding-top: 1.25rem;
+        padding-left: 0%;
     }
     img{
         padding-top: 1.25rem;
